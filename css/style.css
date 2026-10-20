@@ -8951,10 +8951,10 @@ body:has(#allBlogsModal.active) .navbar {
 }
 /* ===================================================
    ALL BUTTONS: Default (#1034A6) & Hover (#fdbe33)
-   (Navbar, Mobile Menu र Close Button बाहेक)
+   (Except Navbar, Mobile Menu, and Close Button)
 =================================================== */
 
-/* १. Normal State: नेभबार र Close Button बाहेकका बटनहरू Egyptian Blue हुने */
+/* 1. Normal State */
 :not(nav):not(.navbar):not(.mobile-menu):not(.nav-container) > button:not(.btn-close):not(.close):not([class*="close"]),
 :not(nav):not(.navbar):not(.mobile-menu) input[type="button"],
 :not(nav):not(.navbar):not(.mobile-menu) input[type="submit"],
@@ -8970,7 +8970,7 @@ body:has(#allBlogsModal.active) .navbar {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
 }
 
-/* बटनभित्रका आइकन र एरो (पछाडि कुनै नीलो डब्बा नबस्ने गरी) */
+/* Icons and arrows inside buttons */
 :not(nav):not(.navbar):not(.mobile-menu) .btn:not(.btn-close):not(.close) i,
 :not(nav):not(.navbar):not(.mobile-menu) .btn:not(.btn-close):not(.close) span,
 :not(nav):not(.navbar):not(.mobile-menu) [class*="btn"]:not(.btn-close):not(.close) i,
@@ -8985,8 +8985,7 @@ body:has(#allBlogsModal.active) .navbar {
     transition: color 0.3s ease !important;
 }
 
-
-/* २. Hover State: माउस लैजाँदा पहेंलो (#fdbe33) हुने र अक्षर गाढा हुने */
+/* 2. Hover State */
 :not(nav):not(.navbar):not(.mobile-menu) .btn:not(.navbar-toggler):not(.btn-close):not(.close):not([class*="close"]):hover,
 :not(nav):not(.navbar):not(.mobile-menu) .button:not(.btn-close):not(.close):not([class*="close"]):hover,
 :not(nav):not(.navbar):not(.mobile-menu) a.btn:not(.btn-close):not(.close):not([class*="close"]):hover,
@@ -8997,7 +8996,7 @@ body:has(#allBlogsModal.active) .navbar {
     border-color: #fdbe33 !important;
 }
 
-/* Hover हुँदा एरो वा आइकनको पछाडिको ब्याकग्राउन्ड हटेर pure पहेंलो मात्र देखिने */
+/* Hover state for icons and arrows */
 :not(nav):not(.navbar):not(.mobile-menu) .btn:not(.btn-close):not(.close):hover i,
 :not(nav):not(.navbar):not(.mobile-menu) .btn:not(.btn-close):not(.close):hover span,
 :not(nav):not(.navbar):not(.mobile-menu) [class*="btn"]:not(.btn-close):not(.close):hover i,
@@ -9011,9 +9010,8 @@ body:has(#allBlogsModal.active) .navbar {
     box-shadow: none !important;
 }
 
-
 /* ===================================================
-   MOBILE NAVBAR & CLOSE BUTTON OVERRIDE (सुरक्षा घेरा)
+   MOBILE NAVBAR & CLOSE BUTTON OVERRIDE
 =================================================== */
 .navbar-toggler,
 .navbar-toggler-icon,
@@ -9046,7 +9044,7 @@ header button,
   gap: 8px;
   white-space: nowrap;
   cursor: pointer;
-  color: #ffffff; /* यदि Text पनि सेतो चाहिने भए */
+  color: #ffffff;
 }
 
 /* SVG Arrow Style (Pure White) */
@@ -9054,11 +9052,11 @@ header button,
   width: 18px;
   height: 18px;
   flex-shrink: 0;
-  stroke: #ffffff !important; /* Arrow को लाइन सेतो बनाउन */
+  stroke: #ffffff !important;
   transition: transform 0.2s ease;
 }
 
-/* Hover Effect: Arrow देब्रेतिर सर्ने */
+/* Hover Effect */
 .article-close-top-left .btn-close-modal-bottom:hover .close-arrow-icon {
   transform: translateX(-3px);
 }
