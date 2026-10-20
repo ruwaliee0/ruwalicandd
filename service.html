@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ruwali Construction - Services</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Construction Company Website Template" name="keywords">
+        <meta content="Construction Company Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            body {
+                font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f4f7f6;
+                color: #333;
+            }
+
+            .service-section {
+                padding: 60px 0;
+            }
+
+            .section-header {
+                margin-bottom: 45px;
+            }
+
+            .section-header p {
+                color: #fdbe33;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+            }
+
+            .section-header h2 {
+                color: #030f27;
+                font-weight: 800;
+                font-size: 32px;
+            }
+
+            /* Card Styling */
+            .service-card {
+                background: #ffffff;
+                border-radius: 12px;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+                overflow: hidden;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .service-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            }
+
+            .service-img img {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+            }
+
+            .service-body {
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+            }
+
+            .service-body h3 {
+                font-size: 20px;
+                font-weight: 700;
+                color: #030f27;
+                margin-bottom: 12px;
+            }
+
+            .short-desc {
+                font-size: 14px;
+                color: #666;
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+
+            /* Learn More / Back Button Style */
+            .learn-more-btn, .back-btn {
+                background: none;
+                border: none;
+                color: #fdbe33;
+                font-weight: 700;
+                font-size: 15px;
+                cursor: pointer;
+                padding: 10px 0 0 0;
+                display: inline-flex;
+                align-items: center;
+                gap: 5px;
+                margin-top: auto;
+                text-align: left;
+                outline: none;
+                transition: color 0.3s ease;
+            }
+
+            .learn-more-btn:hover, .back-btn:hover {
+                color: #030f27;
+            }
+
+            /* Detail Section Styling */
+            .detail-text-body p {
+                font-size: 15px;
+                color: #444;
+                line-height: 1.7;
+            }
+
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(-8px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+
+            .detail-content-item {
+                animation: fadeIn 0.4s ease-in-out;
+            }
+
+            @media (max-width: 767px) {
+                .service-img img {
+                    height: 190px;
+                }
+                .section-header h2 {
+                    font-size: 24px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Luxury Header Container Start -->
+<header class="luxury-header" id="luxuryHeader">
+  
+  <!-- Slim Floating Top Utility Bar -->
+  <div class="top-utility-bar">
+    <div class="header-container">
+      <div class="utility-wrapper">
+        
+        <!-- Left: Quick Contact Details -->
+        <div class="utility-left">
+          <a href="tel:+0123456789" class="utility-link">
+            <i class="fa-solid fa-phone-volume icon-glow"></i>
+            <span>+012 345 6789</span>
+          </a>
+          <span class="utility-divider"></span>
+          <a href="mailto:ruwalicands@gmail.com" class="utility-link">
+            <i class="fa-solid fa-paper-plane icon-glow"></i>
+            <span>ruwalicands@gmail.com</span>
+          </a>
+          <span class="utility-divider d-mobile-none"></span>
+          <span class="utility-text d-mobile-none">
+            <i class="fa-solid fa-clock icon-glow"></i>
+            <span>Mon - Fri: 8:00 AM - 6:00 PM</span>
+          </span>
+        </div>
+
+        <!-- Right: Social Connections & Regional Selector -->
+        <div class="utility-right">
+          <div class="social-pills">
+            <a href="#" class="social-pill-item" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-pill-item" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-pill-item" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- /Top Utility Bar -->
+
+  <!-- Main Floating Glassmorphic Navbar -->
+  <div class="nav-floating-wrapper">
+    <div class="header-container">
+      <nav class="glass-navbar" id="glassNavbar">
+        
+        <!-- Brand Logo with Metallic Accent -->
+        <a href="index.html" class="brand-logo-container">
+          <div class="logo-badge">
+            <img src="img/final ruwali construction.png" alt="Ruwali Construction Logo" class="brand-img">
+          </div>
+          <div class="brand-typography">
+            <span class="brand-title">RUWALI</span>
+            <span class="brand-subtitle"><span class="accent-dot"></span>CONSTRUCTION</span>
+          </div>
+        </a>
+
+        <!-- Centered Modern Navigation Items -->
+        <div class="desktop-menu-center">
+          <ul class="nav-links-hub">
+            
+            <li class="nav-hub-item">
+              <a href="index.html" class="nav-hub-link active">Home</a>
+            </li>
+
+            <li class="nav-hub-item">
+              <a href="about.html" class="nav-hub-link">About</a>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-hub-item">
+              <a href="services.html" class="nav-hub-link">Services</a>
+            </li>
+
+            <!-- Projects Dropdown -->
+            <li class="nav-hub-item">
+              <a href="projects.html" class="nav-hub-link">Projects</a>
+            </li>
+
+            <li class="nav-hub-item">
+              <a href="team.html" class="nav-hub-link">Team</a>
+            </li>
+
+            <li class="nav-hub-item">
+              <a href="blog.html" class="nav-hub-link">Blog</a>
+            </li>
+
+            <li class="nav-hub-item">
+              <a href="contact.html" class="nav-hub-link">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Right Side CTA Action -->
+        <div class="desktop-action-right">
+          <a href="contact.html" class="quote-btn-luxury">
+            <span class="btn-shine"></span>
+            <span class="btn-text">Get a Quote</span>
+            <i class="fa-solid fa-arrow-right-long btn-icon"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Trigger -->
+        <button class="mobile-hamburger-trigger" id="mobileDrawerOpen" aria-label="Open Navigation Drawer">
+          <span class="hamburger-line line-top"></span>
+          <span class="hamburger-line line-mid"></span>
+          <span class="hamburger-line line-bot"></span>
+        </button>
+
+      </nav>
+    </div>
+  </div>
+  <!-- /Main Glassmorphic Navbar -->
+
+  <!-- App-Style Mobile Full-Screen Slide Drawer -->
+  <div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-glass-drawer" id="mobileDrawer">
+    
+    <div class="drawer-header-row">
+      <div class="drawer-brand">
+        <img src="img/final ruwali construction.png" alt="Logo" class="drawer-logo">
+        <span class="drawer-title">RUWALI</span>
+      </div>
+      <button class="drawer-close-btn" id="mobileDrawerClose" aria-label="Close Navigation Drawer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="drawer-scroll-body">
+      <ul class="mobile-menu-tree">
+        
+        <li><a href="index.html" class="mobile-tree-link active">Home</a></li>
+        <li><a href="about.html" class="mobile-tree-link">About</a></li>
+
+        <!-- Mobile Accordion Item: Services -->
+        <li class="mobile-accordion-item">
+          <div class="accordion-head">
+            <a href="service.html" class="mobile-tree-link">Services</a>
+            <button class="accordion-plus-btn" aria-label="Expand Submenu"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <div class="accordion-body-collapse">
+            <a href="service-commercial.html">Commercial Construction</a>
+            <a href="service-residential.html">Residential Estates</a>
+            <a href="service-renovation.html">Architectural Engineering</a>
+          </div>
+        </li>
+
+        <!-- Mobile Accordion Item: Projects -->
+        <li class="mobile-accordion-item">
+          <div class="accordion-head">
+            <a href="portfolio.html" class="mobile-tree-link">Projects</a>
+            <button class="accordion-plus-btn" aria-label="Expand Submenu"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <div class="accordion-body-collapse">
+            <a href="projects-ongoing.html">Ongoing Projects</a>
+            <a href="projects-completed.html">Completed Landmarks</a>
+          </div>
+        </li>
+
+        <li><a href="team.html" class="mobile-tree-link">Team</a></li>
+        <li><a href="blog.html" class="mobile-tree-link">Blog</a></li>
+        <li><a href="contact.html" class="mobile-tree-link">Contact</a></li>
+
+      </ul>
+
+      <!-- Drawer Bottom Card Info -->
+      <div class="drawer-footer-card">
+        <a href="contact.html" class="quote-btn-luxury w-100 justify-content-center py-3 mb-4">
+          <span class="btn-text">Get a Quote</span>
+          <i class="fa-solid fa-arrow-right-long btn-icon"></i>
+        </a>
+        <div class="drawer-contacts">
+          <p><i class="fa-solid fa-phone-volume text-accent"></i> +012 345 6789</p>
+          <p><i class="fa-solid fa-paper-plane text-accent"></i> ruwalicands@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+  </aside>
+  <!-- /App-Style Mobile Drawer -->
+
+</header>
+<!-- Luxury Header Container End -->
+
+            <!-- Page Header Start -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Our Services</h2>
+                        </div>
+                        <div class="col-12">
+                            <a href="index.html">Home</a>
+                            <a href="service.html">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+            <!-- Services Overview Section -->
+            <section class="service-section" id="services-main-view">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Our Quality Services</p>
+                        <h2>We Provide Comprehensive Construction Services</h2>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- Service Item 1 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="service-card">
+                                <div class="service-img">
+                                    <img src="img/service-1.jpg" alt="Construction Service">
+                                </div>
+                                <div class="service-body">
+                                    <h3>Construction (RCC & Steel Structure)</h3>
+                                    <p class="short-desc">Ruwali Construction provides professional RCC and steel structure construction services in Nepal for homes...</p>
+                                    <button type="button" class="learn-more-btn" onclick="showFullDetails('service-1-details')">
+                                        Learn More &rarr;
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Item 2 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="service-card">
+                                <div class="service-img">
+                                    <img src="img/service-2.jpg" alt="Renovation Service">
+                                </div>
+                                <div class="service-body">
+                                    <h3>House & Space Renovation</h3>
+                                    <p class="short-desc">Ruwali Construction provides professional renovation and remodeling services across Nepal for homes...</p>
+                                    <button type="button" class="learn-more-btn" onclick="showFullDetails('service-2-details')">
+                                        Learn More &rarr;
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FULL-WIDTH DETAIL VIEW SECTION (Hidden initially) -->
+            <section id="service-detail-container" style="display: none;" class="py-5">
+                <div class="container">
+                    <!-- Back Button -->
+                    <button class="back-btn mb-4" onclick="hideFullDetails()">
+                        &larr; Back to Services
+                    </button>
+
+                    <!-- Service 1 Detail -->
+                    <div id="service-1-details" class="detail-content-item" style="display: none;">
+                        <div class="detail-banner-img mb-4">
+                            <img src="img/construction logo ruwalies.jpg" alt="Structure Construction Banner" class="img-fluid rounded">
+                        </div>
+                        <div class="detail-text-body">
+                            <p>Ruwali Construction provides professional RCC and steel structure construction services in Nepal for homes, commercial buildings, hotels and other building projects. We help turn approved designs, architectural drawings and structural plans into safe, durable and well-built structures through proper planning, skilled manpower and reliable project execution.</p>
+
+                            <p>Construction is one of the most important phases of any building project. The quality of materials, workmanship, concrete mix ratio, formwork timing, construction technology and site supervision directly affect the strength, safety and long-term performance of the building. That is why choosing the right construction company is essential before starting your project.</p>
+
+                            <p>Our expert team of civil engineers, supervisors and skilled workers works according to the approved design, technical requirements and project timeline. We focus on using the right materials, proper construction methods and quality control practices to deliver strong and dependable structures.</p>
+
+                            <h3 class="mt-4 mb-3 font-weight-bold">Professional RCC And Steel Structure Construction Services</h3>
+                            <p>We handle all aspects of structural construction including excavation, foundation works, column/beam reinforcement, slab casting, masonry works, and steel frame fabrication for commercial/industrial projects.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 Detail -->
+                    <div id="service-2-details" class="detail-content-item" style="display: none;">
+                        <div class="detail-banner-img mb-4">
+                            <img src="img/service-2-banner.jpg" alt="Renovation Banner" class="img-fluid rounded">
+                        </div>
+                        <div class="detail-text-body">
+                            <p>Ruwali Construction provides full-scale renovation and retrofitting services for residential homes, corporate offices, and hospitality spaces across Nepal...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQs End -->
+
+            <!-- Footer Start -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>Office Contact</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>Your Location, City, Country</p>
+                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                <div class="footer-social">
+                                    <a href="https://freewebsitecode.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://facebook.com/freewebsitecode"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://freewebsitecode.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://freewebsitecode.com/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UC9HlQRmKgG3jeVD_fBxj1Pw/videos"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Services Areas</h2>
+                                <a href="">Building Construction</a>
+                                <a href="">House Renovation</a>
+                                <a href="">Architecture Design</a>
+                                <a href="">Interior Design</a>
+                                <a href="">Painting</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="">About Us</a>
+                                <a href="">Contact Us</a>
+                                <a href="">Our Team</a>
+                                <a href="">Projects</a>
+                                <a href="">Testimonial</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>Newsletter</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu
+                                </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Email here">
+                                    <button class="btn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">Ruwali Construction</a>, All Right Reserved.</p>
+                        </div>
+						
+						
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <!-- Custom Detail Toggle JS -->
+        <script>
+            function showFullDetails(targetId) {
+                // Hide main service cards
+                document.getElementById('services-main-view').style.display = 'none';
+
+                // Hide all detail blocks first
+                var details = document.querySelectorAll('.detail-content-item');
+                details.forEach(function(item) {
+                    item.style.display = 'none';
+                });
+
+                // Show detail container & selected service detail
+                document.getElementById('service-detail-container').style.display = 'block';
+                document.getElementById(targetId).style.display = 'block';
+
+                // Scroll to top of detail view smoothly
+                window.scrollTo({ top: 200, behavior: 'smooth' });
+            }
+
+            function hideFullDetails() {
+                // Hide full detail section
+                document.getElementById('service-detail-container').style.display = 'none';
+
+                // Show main service cards section
+                document.getElementById('services-main-view').style.display = 'block';
+            }
+        </script>
+    </body>
+</html>

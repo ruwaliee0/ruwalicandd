@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ruwali Construction - Services</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Ruwali Construction Services" name="keywords">
+        <meta content="Ruwali Construction Services" name="description">
+
+        <!-- Favicon -->
+        <link href="img/final Ruwali Construction.png" rel="icon" type="image/png">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            body {
+                font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f4f7f6;
+                color: #333;
+            }
+
+            .service-section {
+                padding: 60px 0;
+            }
+
+            .section-header {
+                margin-bottom: 45px;
+            }
+
+            .section-header p {
+                color: #fdbe33;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+            }
+
+            .section-header h2 {
+                color: #030f27;
+                font-weight: 800;
+                font-size: 32px;
+            }
+
+            /* Card Styling */
+            .service-card {
+                background: #ffffff;
+                border-radius: 12px;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+                overflow: hidden;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .service-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            }
+
+            .service-img img {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+            }
+
+            .service-body {
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+            }
+
+            .service-body h3 {
+                font-size: 20px;
+                font-weight: 700;
+                color: #030f27;
+                margin-bottom: 12px;
+            }
+
+            .short-desc {
+                font-size: 14px;
+                color: #666;
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+
+            /* Learn More / Back Button Style */
+            .learn-more-btn, .back-btn {
+                background: none;
+                border: none;
+                color: #fdbe33;
+                font-weight: 700;
+                font-size: 15px;
+                cursor: pointer;
+                padding: 10px 0 0 0;
+                display: inline-flex;
+                align-items: center;
+                gap: 5px;
+                margin-top: auto;
+                text-align: left;
+                outline: none;
+                transition: color 0.3s ease;
+            }
+
+            .learn-more-btn:hover, .back-btn:hover {
+                color: #030f27;
+            }
+
+            /* Detail Section Styling */
+            .detail-text-body p {
+                font-size: 15px;
+                color: #444;
+                line-height: 1.7;
+            }
+
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(-8px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+
+            .detail-content-item {
+                animation: fadeIn 0.4s ease-in-out;
+            }
+
+            @media (max-width: 767px) {
+                .service-img img {
+                    height: 190px;
+                }
+                .section-header h2 {
+                    font-size: 24px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+        <!-- Luxury Header Container Start -->
+<header class="luxury-header" id="luxuryHeader">
+
+  <!-- Slim Floating Top Utility Bar -->
+  <div class="top-utility-bar">
+    <div class="header-container">
+      <div class="utility-wrapper">
+
+        <!-- Left: Quick Contact Details -->
+        <div class="utility-left">
+          <a href="tel:+0123456789" class="utility-link">
+            <i class="fas fa-phone-alt icon-glow"></i>
+            <span>+012 345 6789</span>
+          </a>
+          <span class="utility-divider"></span>
+          <a href="mailto:ruwalicands@gmail.com" class="utility-link">
+            <i class="fas fa-envelope icon-glow"></i>
+            <span>ruwalicands@gmail.com</span>
+          </a>
+          <span class="utility-divider d-mobile-none"></span>
+          <span class="utility-text d-mobile-none">
+            <i class="fas fa-clock icon-glow"></i>
+            <span>Mon - Fri: 8:00 AM - 6:00 PM</span>
+          </span>
+        </div>
+
+        <!-- Right: Social Connections & Regional Selector -->
+        <div class="utility-right">
+          <div class="social-pills">
+            <a href="#" class="social-pill-item" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-pill-item" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-pill-item" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- /Top Utility Bar -->
+
+  <!-- Main Floating Glassmorphic Navbar -->
+  <div class="nav-floating-wrapper">
+    <div class="header-container">
+      <nav class="glass-navbar" id="glassNavbar">
+
+        <!-- Brand Logo with Metallic Accent -->
+        <a href="index.html" class="brand-logo-container">
+          <div class="logo-badge">
+            <img src="img/final Ruwali Construction.png" alt="Ruwali Construction Logo" class="brand-img">
+          </div>
+          <div class="brand-typography">
+            <span class="brand-title">RUWALI</span>
+            <span class="brand-subtitle"><span class="accent-dot"></span>CONSTRUCTION</span>
+          </div>
+        </a>
+
+        <!-- Centered Navigation Links -->
+        <div class="desktop-menu-center">
+          <ul class="nav-links-hub">
+            <li class="nav-hub-item"><a href="index.html" class="nav-hub-link">Home</a></li>
+            <li class="nav-hub-item"><a href="about.html" class="nav-hub-link">About</a></li>
+            <li class="nav-hub-item"><a href="services.html" class="nav-hub-link active">Service</a></li>
+            <li class="nav-hub-item"><a href="team.html" class="nav-hub-link">Team</a></li>
+            <li class="nav-hub-item"><a href="projects.html" class="nav-hub-link">Projects</a></li>
+
+            <!-- Pages Dropdown -->
+           <li class="nav-hub-item has-glass-dropdown">
+  <a href="#" class="nav-hub-link">
+    <span>Pages</span>
+    <i class="fas fa-chevron-down drop-chevron"></i>
+  </a>
+              <div class="glass-dropdown-panel">
+                <ul class="dropdown-links-list">
+                  <li>
+                   <a href="blog.html" class="dropdown-hub-item">
+          <div class="dropdown-icon-box">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <div class="dropdown-text">
+            <strong>Blog Page</strong>
+            <small>Latest news & updates</small>
+          </div>
+                    </a>
+                  </li>
+                  <li>
+                  <a href="single.html" class="dropdown-hub-item">
+          <div class="dropdown-icon-box">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <div class="dropdown-text">
+            <strong>Converter</strong>
+            <small>Unit & area calculator</small>
+          </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-hub-item"><a href="contact.html" class="nav-hub-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Side CTA Action -->
+        <div class="desktop-action-right">
+          <a href="contact.html" class="quote-btn-luxury">
+            <span class="btn-shine"></span>
+            <span class="btn-text">Get a Quote</span>
+            <i class="fa-solid fa-arrow-right-long btn-icon"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Trigger -->
+        <button class="mobile-hamburger-trigger" id="mobileDrawerOpen" aria-label="Open Mobile Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+      </nav>
+    </div>
+  </div>
+  <!-- /Main Glassmorphic Navbar -->
+ <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-glass-drawer" id="mobileDrawer">
+    <div class="drawer-header-row">
+      <div class="drawer-brand">
+        <img src="img/final Ruwali Construction.png" alt="Ruwali Construction Logo" class="drawer-logo">
+        <span class="drawer-title">RUWALI</span>
+      </div>
+      <button class="drawer-close-btn" id="mobileDrawerClose" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="drawer-scroll-body">
+      <ul class="mobile-menu-tree">
+        <li><a href="index.html" class="mobile-tree-link active">Home</a></li>
+        <li><a href="about.html" class="mobile-tree-link">About</a></li>
+        <li><a href="projects.html" class="mobile-tree-link">Projects</a></li>
+
+       <!-- UPDATED MOBILE ACCORDION FOR PAGES -->
+<li class="mobile-accordion-item">
+  <div class="accordion-head" id="mobilePagesToggle">
+    <a href="javascript:void(0)" class="mobile-tree-link">
+      <span>Pages</span>
+      <i class="fas fa-chevron-down mobile-chevron-icon" id="mobileChevron"></i>
+    </a>
+  </div>
+
+  <div class="accordion-body-collapse" id="mobilePagesMenu" style="display: none;">
+    <!-- Blog Card -->
+    <a href="blog.html" class="mobile-dropdown-card">
+      <div class="mobile-dropdown-icon">
+        <i class="fas fa-newspaper"></i>
+      </div>
+      <div class="mobile-dropdown-text">
+        <strong>Blog Page</strong>
+        <small>Latest news & updates</small>
+      </div>
+    </a>
+
+    <!-- Converter Card -->
+    <a href="single.html" class="mobile-dropdown-card">
+      <div class="mobile-dropdown-icon">
+        <i class="fas fa-calculator"></i>
+      </div>
+      <div class="mobile-dropdown-text">
+        <strong>Converter</strong>
+        <small>Unit & area calculator</small>
+      </div>
+    </a>
+  </div>
+</li>
+
+<li><a href="contact.html" class="mobile-tree-link">Contact</a></li>
+
+      <div class="drawer-footer-card">
+        <a href="contact.html" class="quote-btn-luxury w-100 justify-content-center py-3">
+          <span class="btn-text">Get a Quote</span>
+          <i class="fa-solid fa-arrow-right-long btn-icon"></i>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+</header>
+
+<!-- Luxury Header Container End -->
+
+           <!-- Page Header Start -->
+<div class="page-header-banner">
+  <!-- Banner image -->
+  <img src="images/service-bg.jpg" alt="Our Services Banner" class="banner-bg-img">
+
+  <!-- Blue-to-orange overlay -->
+  <div class="banner-overlay"></div>
+
+  <!-- Content Layer -->
+  <div class="container relative-content">
+    <div class="page-header-content text-center">
+      <h1 class="page-title">Our Services</h1>
+      <ul class="breadcrumb-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="separator">/</li>
+        <li class="active">Our Services</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Page Header End -->
+
+  <!-- Services Section -->
+<section class="services-slider-section py-5">
+  <div class="container text-center">
+    <p class="section-subtitle">Our Services</p>
+    <h2 class="section-title">Comprehensive Services</h2>
+
+    <!-- Slider Outer Wrapper -->
+    <div class="slider-wrapper">
+      <!-- Left Navigation Button -->
+      <button class="slide-nav-btn prev-btn" id="prevBtn">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <!-- Cards Container -->
+      <div class="services-slider-container" id="servicesSlider">
+        
+        <!-- Card 1 (सधैं देखिने) -->
+        <div class="service-slide-card">
+          <div class="card-img-wrap"><img src="img/Rcc and steel.png" alt="Construction"></div>
+          <div class="card-content">
+            <h3>Construction (RCC & Steel)</h3>
+            <p class="card-desc">Professional RCC & steel structure construction...</p>
+            <ul class="card-meta">
+              <li><i class="fas fa-user"></i> Commercial & Residential</li>
+              <li><i class="fas fa-map-marker-alt"></i> All Over Nepal</li>
+            </ul>
+            <button class="card-action-btn" data-service-id="service-1">View Details &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Card 2 (सधैं देखिने) -->
+        <div class="service-slide-card">
+          <div class="card-img-wrap"><img src="img/prefect size.png" alt="Renovation"></div>
+          <div class="card-content">
+            <h3>House & Space Renovation</h3>
+            <p class="card-desc">Full-scale renovation and remodeling...</p>
+            <ul class="card-meta">
+              <li><i class="fas fa-user"></i> Private & Office Spaces</li>
+              <li><i class="fas fa-map-marker-alt"></i> Kathmandu Valley</li>
+            </ul>
+            <button class="card-action-btn" data-service-id="service-2">View Details &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Card 3 (सधैं देखिने) -->
+        <div class="service-slide-card">
+          <div class="card-img-wrap"><img src="img/36cad7f9-0fe2-4000-a76a-c93d4f65714d.png" alt="Architecture"></div>
+          <div class="card-content">
+            <h3>Exterior / Interior Designs</h3>
+            <p class="card-desc">Modern 2D/3D building design...</p>
+            <ul class="card-meta">
+              <li><i class="fas fa-user"></i> All Project Types</li>
+              <li><i class="fas fa-map-marker-alt"></i> Nepal Wide</li>
+            </ul>
+            <button class="card-action-btn" data-service-id="service-3">View Details &rarr;</button>
+          </div>
+        </div>
+
+       
+        <!-- Card 4 -->
+        <div class="service-slide-card extra-service">
+          <div class="card-img-wrap"><img src="img/service-4.jpg" alt="Interior"></div>
+          <div class="card-content">
+            <h3>Plumbing Service </h3>
+            <p class="card-desc">Professional plumbing installation and repair services...</p>
+            <ul class="card-meta">
+              <li><i class="fas fa-user"></i> Residential</li>
+              <li><i class="fas fa-map-marker-alt"></i> Kathmandu</li>
+            </ul>
+            <button class="card-action-btn" data-service-id="service-4">View Details &rarr;</button>
+          </div>
+        </div>
+      </div>
+<script src="./services-data.js"></script>
+            <!-- Right Navigation Button (Mobile Only) -->
+            <button class="slide-nav-btn next-btn" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+       
+    </div>
+</section>
+
+<!-- Single Service Detail Overlay -->
+<div id="serviceDetailView" class="fullpage-detail-wrapper" style="display: none;">
+    <div class="container py-5">
+        <button class="back-nav-btn mb-4" id="closeDetailBtn">&larr; Back</button>
+        <div id="serviceDetailContent">
+            <!-- Dynamic detail content -->
+        </div>
+    </div>
+</div>
+
+<!-- All Services Grid Overlay -->
+<div id="allServicesView" class="fullpage-detail-wrapper" style="display: none;">
+    <div class="container py-5 text-center">
+        <button class="back-nav-btn mb-4" id="closeAllBtn">&larr; Back</button>
+        <h2 class="fw-bold mb-4">All Our Services</h2>
+        <div class="row g-4" id="allServicesGrid">
+            <!-- Dynamic full grid loaded via JS -->
+        </div>
+    </div>
+</div>
+
+<!-- Home र Services दुवै ठाउँमा यो खाली Placeholder राख्ने -->
+<div id="renovation-placeholder"></div>
+<!-- Custom Features Section End -->
+ <!-- 1. JS Data Link -->
+<script src="services-data.js"></script>
+<!-- 1. External Data File Link -->
+<script src="services-data.js"></script>
+
+<!-- 2. Consolidated Logic -->
+<script>
+window.addEventListener('DOMContentLoaded', function () {
+    const placeholder = document.getElementById('renovation-placeholder');
+
+    // Default Content Load
+    if (placeholder && window.CONSTRUCTION_CONTENT) {
+        placeholder.innerHTML = window.CONSTRUCTION_CONTENT;
+    }
+
+    // Slider Controls (Prev / Next Buttons)
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const servicesSlider = document.getElementById('servicesSlider');
+
+    if (prevBtn && servicesSlider) {
+        prevBtn.onclick = function() {
+            servicesSlider.scrollBy({ left: -320, behavior: 'smooth' });
+        };
+    }
+    if (nextBtn && servicesSlider) {
+        nextBtn.onclick = function() {
+            servicesSlider.scrollBy({ left: 320, behavior: 'smooth' });
+        };
+    }
+
+    // View Details Click Handler (Event Delegation)
+    document.addEventListener('click', function (e) {
+        // Find closest button or element with card-action-btn
+        const btn = e.target.closest('.card-action-btn');
+        
+        if (btn) {
+            e.preventDefault();
+            const serviceId = btn.getAttribute('data-service-id');
+
+            if (placeholder) {
+                if (serviceId === 'service-1' && window.CONSTRUCTION_CONTENT) {
+                    placeholder.innerHTML = window.CONSTRUCTION_CONTENT;
+                } else if (serviceId === 'service-2' && window.RENOVATION_CONTENT) {
+                    placeholder.innerHTML = window.RENOVATION_CONTENT;
+                } else if (serviceId === 'service-3' && window.ARCHITECTURE_CONTENT) {
+                    placeholder.innerHTML = window.ARCHITECTURE_CONTENT;
+                }
+                
+                // Scroll to placeholder
+                placeholder.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Accordion Toggle (+/-)
+        const header = e.target.closest('.reno-card-header');
+        if (header) {
+            const card = header.parentElement;
+            const allCards = document.querySelectorAll('.reno-card');
+            
+            allCards.forEach(c => {
+                if (c !== card) c.classList.remove('active');
+            });
+            
+            card.classList.toggle('active');
+        }
+    });
+});
+</script>
+<!-- 2. Master Rendering Logic -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const placeholder = document.getElementById('renovation-placeholder');
+
+    // Default: Display Renovation Content first
+    if (placeholder && window.RENOVATION_CONTENT) {
+        placeholder.innerHTML = window.RENOVATION_CONTENT;
+    }
+
+    // Dynamic Card Click Handler
+    const actionBtns = document.querySelectorAll('.card-action-btn');
+    actionBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+            const serviceId = this.getAttribute('data-service-id');
+
+            if (placeholder) {
+                // Change Content Based on Clicked Card
+                if (serviceId === 'service-1') {
+                    placeholder.innerHTML = window.CONSTRUCTION_CONTENT;
+                } else if (serviceId === 'service-2') {
+                    placeholder.innerHTML = window.RENOVATION_CONTENT;
+                } else if (serviceId === 'service-3') {
+                    placeholder.innerHTML = window.ARCHITECTURE_CONTENT;
+                }
+
+                // Smooth Scroll to details
+                placeholder.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // (+) Accordion Click Event (Event Delegation)
+    document.addEventListener('click', function (e) {
+        const header = e.target.closest('.reno-card-header');
+        if (header) {
+            const card = header.parentElement;
+            document.querySelectorAll('.reno-card').forEach(item => {
+                if (item !== card) item.classList.remove('active');
+            });
+            card.classList.toggle('active');
+        }
+    });
+});
+</script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQs End -->
+
+            <!-- Footer Start -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>Office Contact</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>Your Location, City, Country</p>
+                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                <div class="footer-social">
+                                    <a href="https://freewebsitecode.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://facebook.com/freewebsitecode"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://freewebsitecode.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://freewebsitecode.com/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UC9HlQRmKgG3jeVD_fBxj1Pw/videos"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Services Areas</h2>
+                                <a href="">Building Construction</a>
+                                <a href="">House Renovation</a>
+                                <a href="">Architecture Design</a>
+                                <a href="">Interior Design</a>
+                                <a href="">Painting</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="">About Us</a>
+                                <a href="">Contact Us</a>
+                                <a href="">Our Team</a>
+                                <a href="">Projects</a>
+                                <a href="">Testimonial</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>Newsletter</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu
+                                </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Email here">
+                                    <button class="btn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">Ruwali Construction</a>, All Right Reserved.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <!-- Service detail toggle -->
+        <script>
+            function showFullDetails(targetId) {
+                // Hide main service cards
+                document.getElementById('services-main-view').style.display = 'none';
+
+                // Hide all detail blocks first
+                var details = document.querySelectorAll('.detail-content-item');
+                details.forEach(function(item) {
+                    item.style.display = 'none';
+                });
+
+                // Show detail container & selected service detail
+                document.getElementById('service-detail-container').style.display = 'block';
+                document.getElementById(targetId).style.display = 'block';
+
+                // Scroll to top of detail view smoothly
+                window.scrollTo({ top: 200, behavior: 'smooth' });
+            }
+
+            function hideFullDetails() {
+                // Hide full detail section
+                document.getElementById('service-detail-container').style.display = 'none';
+
+                // Show main service cards section
+                document.getElementById('services-main-view').style.display = 'block';
+            }
+        </script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const luxuryHeader = document.getElementById('luxuryHeader');
+  const mobileDrawer = document.getElementById('mobileDrawer');
+  const drawerBackdrop = document.getElementById('drawerBackdrop');
+  const mobileDrawerOpen = document.getElementById('mobileDrawerOpen');
+  const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+
+  // Sticky Scroll Engine
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) {
+      luxuryHeader.classList.add('is-sticky');
+    } else {
+      luxuryHeader.classList.remove('is-sticky');
+    }
+  });
+
+  // Mobile Drawer Open
+  if (mobileDrawerOpen) {
+    mobileDrawerOpen.addEventListener('click', () => {
+      mobileDrawer.classList.add('active');
+      drawerBackdrop.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  }
+
+  // Mobile Drawer Close
+  const closeDrawer = () => {
+    mobileDrawer.classList.remove('active');
+    drawerBackdrop.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  if (mobileDrawerClose) {
+    mobileDrawerClose.addEventListener('click', closeDrawer);
+  }
+
+  if (drawerBackdrop) {
+    drawerBackdrop.addEventListener('click', closeDrawer);
+  }
+
+  // Mobile Accordion Toggle
+  const accordionHeads = document.querySelectorAll('.accordion-head');
+  accordionHeads.forEach(head => {
+    const plusBtn = head.querySelector('.accordion-plus-btn');
+    const collapse = head.nextElementSibling;
+
+    if (plusBtn && collapse) {
+      plusBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isExpanded = collapse.style.display === 'block';
+
+        // Close all other accordions
+        document.querySelectorAll('.accordion-body-collapse').forEach(c => {
+          c.style.display = 'none';
+        });
+        document.querySelectorAll('.accordion-plus-btn i').forEach(i => {
+          i.classList.remove('fa-minus');
+          i.classList.add('fa-plus');
+        });
+
+        // Toggle current
+        if (!isExpanded) {
+          collapse.style.display = 'block';
+          plusBtn.querySelector('i').classList.remove('fa-plus');
+          plusBtn.querySelector('i').classList.add('fa-minus');
+        }
+      });
+    }
+  });
+});
+</script>
+    </body>
+</html>
