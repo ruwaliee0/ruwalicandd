@@ -2817,12 +2817,6 @@ body, p {
 /* Badge Styles */
 
 
-
-
-
-
-
-
 /* Titles */
 
 
@@ -2833,11 +2827,6 @@ body, p {
 
 
 /* Carousel Section */
-
-
-
-
-
 
 /* Responsive Grid Cards */
 
@@ -2854,10 +2843,6 @@ body, p {
 }
 
 /* Overlay & View Button */
-
-
-
-
 
 
 .featured-gallery-section .view-gallery-trigger {
@@ -2910,15 +2895,6 @@ body, p {
 /* Modal Controls */
 
 
-
-
-
-
-
-
-
-
-
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 992px) {
   
@@ -2939,39 +2915,13 @@ body, p {
 
 
 
-
-
-
 /* Header & Badge */
 
 
 
 
 
-
-
-
-
-
-
-
-
-
 /* Carousel Section */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2991,13 +2941,6 @@ body, p {
 .featured-gallery-section .view-gallery-trigger:hover {
   transform: scale(1.05);
 }
-
-
-
-
-
-
-
 
 
 
@@ -3527,7 +3470,7 @@ body, p {
    HEADER & CLOSE BUTTON FIX (RUWALI OVERLAY)
    =================================================== */
 
-/* १. बिग्रिएको Close Button (×) लाई ट्याक्क Top-Right मा गोलो र सफा बनाउने */
+/* १. correction x buttom*/
 .ruwali-fullpage-overlay .ruwali-close-btn,
 button.ruwali-close-btn {
   position: absolute !important;
@@ -3580,7 +3523,7 @@ button.ruwali-close-btn {
     gap: 20px !important;
   }
 
-  /* ३. Card लाई Full Width (100%) बनाउने */
+  /* ३. Card full width */
   .ruwali-fullpage-overlay .row > *,
   .ruwali-fullpage-overlay [class*="col-"],
   .ruwali-fullpage-overlay .service-slide-card,
@@ -3613,7 +3556,7 @@ button.ruwali-close-btn {
     display: block !important;
   }
 
-  /* ६. Card भित्रको Action Button लाई मात्र नीलो र Full Width बनाउने (Close Button लाई असर गर्दैन) */
+ /*action buttom */
   .ruwali-fullpage-overlay .card-content button,
   .ruwali-fullpage-overlay .card-body button,
   .ruwali-fullpage-overlay .card-action-btn {
@@ -3869,7 +3812,7 @@ button.ruwali-close-btn {
 
 /* ======================================================
    MOBILE ONLY: View All Projects Overlay - 2 Cards per Row
-   (Home Page Slider Card मा कुनै असर पर्दैन)
+   (Home Page Slider Card 
    ====================================================== */
 @media (max-width: 576px) {
 
@@ -3945,8 +3888,7 @@ button.ruwali-close-btn {
    OUR PROJECTS SLIDER: CLEAN & RESPONSIVE LAYOUT
    ====================================================== */
 
-/* 1. Blue Navigation Buttons Hide गर्ने */
-
+/* 1. Hide Navigation Buttons */
 
 /* 2. Slider Container Setup (Smooth Horizontal Scroll) */
 .ruwali-projects-slider {
@@ -3954,13 +3896,12 @@ button.ruwali-close-btn {
   flex-direction: row !important;
   overflow-x: auto !important;
   scroll-behavior: smooth;
-  gap: 20px; /* Card हरू बिचको दुरी */
-  padding: 10px 5px 25px 5px; /* Box Shadow नकाटियोस् भनेर bottom padding */
+  gap: 20px;
+  padding: 10px 5px 25px 5px;
   -webkit-overflow-scrolling: touch;
 }
 
-/* Horizontal Scrollbar लुकाउने (स्वच्छ देखिनका लागि) */
-
+/* Hide Horizontal Scrollbar */
 .ruwali-projects-slider {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -3968,7 +3909,7 @@ button.ruwali-close-btn {
 
 /* 3. Card Responsive Width (Desktop & Large Screens) */
 .ruwali-projects-slider .ruwali-project-card {
-  flex: 0 0 calc(33.333% - 14px) !important; /* Large Screen मा 3 वटा Card */
+  flex: 0 0 calc(33.333% - 14px) !important;
   min-width: 300px !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
@@ -3977,12 +3918,11 @@ button.ruwali-close-btn {
 }
 
 .ruwali-projects-slider .ruwali-project-card:hover {
-  transform: translateY(-5px); /* Mouse लैजाँदा थोरै माथि उचालिने */
+  transform: translateY(-5px);
 }
 
 /* 4. Responsive Adjustments for Tablet & Mobile */
 @media (max-width: 992px) {
-  /* Tablet / iPad मा 2 वटा Card देखिने */
   .ruwali-projects-slider .ruwali-project-card {
     flex: 0 0 calc(50% - 10px) !important;
     min-width: 260px !important;
@@ -3990,16 +3930,15 @@ button.ruwali-close-btn {
 }
 
 @media (max-width: 576px) {
-  /* Mobile ma Single Card side-by-side scroll huni */
   .ruwali-projects-slider .ruwali-project-card {
-    flex: 0 0 85% !important; /* थोरै अर्को card को भाग पनि झुल्किन्छ जसले scroll गर्न मिल्छ भन्ने थाहा हुन्छ */
+    flex: 0 0 85% !important;
     min-width: 85% !important;
   }
-  
+}
   .ruwali-projects-slider {
     gap: 15px;
   }
-}
+
 /* Slider Wrapper Relative Positioning */
 .ruwali-slider-wrapper {
   position: relative;
@@ -4087,7 +4026,7 @@ button.ruwali-close-btn {
 
 
 
-/* MOBILE RESPONSIVE (View All Posts Modal मा 1 Row ma 2 Cards) */
+/* MOBILE RESPONSIVE (View All Posts Modal  1 Row ma 2 Cards) */
 @media (max-width: 576px) {
   #fullPageBlogOverlay #allBlogsGrid > [class*="col-"] {
     width: 50% !important;
@@ -4468,8 +4407,7 @@ button.ruwali-close-btn {
   z-index: 1050 !important; /* Base Layer for Modal */
   overflow-y: auto;
 }
-
-/* READ MORE OVERLAY & SIDE PANEL (माथि देखाउनका लागि z-index उच्च बनाइएको) */
+/* READ MORE OVERLAY & SIDE PANEL */
 #articleOverlay {
   display: none;
   position: fixed;
@@ -4478,7 +4416,7 @@ button.ruwali-close-btn {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.6);
-  z-index: 9998 !important; /* Modal भन्दा धेरै माथि */
+  z-index: 9998 !important;
 }
 
 #articleSidePanel {
@@ -4489,7 +4427,7 @@ button.ruwali-close-btn {
   max-width: 680px;
   height: 100vh;
   background: #ffffff;
-  z-index: 9999 !important; /* सबैभन्दा माथिल्लो Layer */
+  z-index: 9999 !important;
   transition: right 0.35s ease-in-out;
   box-shadow: -5px 0 25px rgba(0,0,0,0.3);
 }
@@ -4497,7 +4435,8 @@ button.ruwali-close-btn {
 #articleSidePanel.open {
   right: 0 !important;
 }
-/* Read More button को click गर्दा आउने कालो Focus Line/Box हटाउन */
+
+/* Read More button focus outline removal */
 .btn-read-more,
 .btn-read-more:focus,
 .btn-read-more:active,
@@ -4506,14 +4445,15 @@ button.ruwali-close-btn {
   box-shadow: none !important;
   border: none !important;
 }
-/* Close buttons मा Click वा Focus गर्दा आउने कालो Outline Line हटाउन */
+
+/* Close buttons focus outline removal */
 .btn-close-panel, .btn-close-white, .btn-close-panel:focus, .btn-close-white:focus, .btn-close-panel:active, .btn-close-white:active, .btn-close-panel:focus-visible, .btn-close-white:focus-visible{
   outline: none !important;
   box-shadow: none !important;
   border: none !important;
 }
 
-/* Modal वा Side Panel भित्रका कुनै पनि बटन Close गर्दा Outline नआओस् भन्नका लागि */
+/* Modal or Side Panel focus outline removal */
 #articleSidePanel button:focus,
 #allBlogsModal button:focus,
 #sidePanel button:focus {
@@ -4524,7 +4464,7 @@ button.ruwali-close-btn {
 
 
 
-/* Mouse Hover गर्दा Animation रोक्नका लागि */
+
 
 
 
@@ -4535,7 +4475,7 @@ button.ruwali-close-btn {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* देब्रेतिर स्लाइड गराउँछ */
+    transform: translateX(-50%); 
   }
 }
 /*nepali land conveter*/
@@ -5146,7 +5086,7 @@ button.ruwali-close-btn {
     left: 80px;
     font-size: 160px;
     line-height: 1;
-    color: #f1f5f9; /* Watermark को लागि हलुका Grey */
+    color: #f1f5f9;
     font-weight: 900;
     font-family: Georgia, serif;
     pointer-events: none;
@@ -5183,10 +5123,9 @@ button.ruwali-close-btn {
         transform: translateX(calc(-50% - 12px));
     }
 }
-
 /* Individual Card Design (Highlighted on White BG) */
 .tw-card {
-    background: #f8fafc; /* Card हरूलाई सेतो background मा प्रस्ट पार्न Light Grey दिइएको छ */
+    background: #f8fafc;
     border-radius: 20px;
     padding: 30px 24px;
     width: 280px;
@@ -5204,12 +5143,11 @@ button.ruwali-close-btn {
 
 /* Floating Lift Animation & Highlight on Hover */
 .tw-card:hover {
-    background: #ffffff; /* Hover गर्दा Card सेतो हुनेछ */
+    background: #ffffff;
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.08);
     border-color: #cbd5e1;
 }
-
 /* Avatar Image */
 .tw-avatar {
     width: 56px;
@@ -5300,27 +5238,25 @@ button.ruwali-close-btn {
     user-select: none;
     transition: all 0.3s ease; /* Smooth Resizing */
 }
-
 /* ==========================================================================
    MOBILE & TABLET RESPONSIVE ADJUSTMENTS
    ========================================================================== */
 
-/* Tablet Screens (768px भन्दा तल) */
+/* Tablet Screens */
 @media (max-width: 768px) {
     .tw-bg-quote {
-        font-size: 100px; /* सानो बनाइयो */
+        font-size: 100px;
         top: -10px;
-        left: 30px;      /* देब्रेपट्टिको नजिक सारियो */
+        left: 30px;
     }
 }
 
-/* Mobile Screens (480px भन्दा तल) */
+/* Mobile Screens */
 @media (max-width: 480px) {
     .tw-bg-quote {
-        font-size: 70px;  /* अझ सानो बनाइयो */
+        font-size: 70px;
         top: -5px;
-        left: 15px;       /* मोबाइलमा कुनामा मिलाइयो */
-        
+        left: 15px;
     }
 }
 /* Unique CSS scoping: app-gal- */
