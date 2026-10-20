@@ -7565,17 +7565,16 @@ button.ruwali-close-btn {
 .page-header-banner {
     position: relative;
     width: 100%;
-    /* Navbar भन्दा हल्का तलबाट सुरु हुन र Navbar सँग नछोपियोस् भनेर Padding मिलाइएको */
-    padding-top: 150px; /* Floating Navbar को उचाइ अनुसार */
+    padding-top: 150px;
     padding-bottom: 90px;
     
     /* Background Image setup */
     background-image: linear-gradient(
         135deg, 
-        rgba(3, 15, 39, 0.85) 0%,   /* Left: Dark Navy Blue Accent */
-        rgba(3, 15, 39, 0.65) 50%,  /* Middle: Soft Blue Tint */
-        rgba(253, 190, 51, 0.75) 100% /* Right: Construction Gold Overlay */
-    ), url("img/header-bg.jpg"); /* <-- यहाँ आफ्नो Background Photo को Link राख्नुहोस् */
+        rgba(3, 15, 39, 0.85) 0%,
+        rgba(3, 15, 39, 0.65) 50%,
+        rgba(253, 190, 51, 0.75) 100%
+    ), url("img/header-bg.jpg");
     
     background-size: cover;
     background-position: center center;
@@ -7583,7 +7582,6 @@ button.ruwali-close-btn {
     background-attachment: scroll;
     box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.1);
 }
-
 /* Title Styling */
 .page-header-content {
     position: relative;
@@ -7636,7 +7634,7 @@ button.ruwali-close-btn {
 /* --- Mobile Responsive Rules --- */
 @media (max-width: 991.98px) {
     .page-header-banner {
-        padding-top: 120px; /* Mobile मा Header र Navbar को Distance */
+        padding-top: 120px; /* Mobile  */
         padding-bottom: 60px;
     }
 
@@ -7664,7 +7662,7 @@ button.ruwali-close-btn {
    Global Reusable Page Header Banner
 ========================================== */
 
-/* Outer Container (Navigation bar भन्दा हल्का तल) */
+/* Outer Container (Navigation bar ) */
 .page-header-banner {
   position: relative;
   width: 100%;
@@ -7673,7 +7671,7 @@ button.ruwali-close-btn {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-top: 25px; /* Nav bar भन्दा हल्का तल राख्न */
+  margin-top: 25px; /
 }
 
 /* Background Image in HTML */
@@ -7688,7 +7686,7 @@ button.ruwali-close-btn {
   z-index: 1;
 }
 
-/* Gradient Overlay (Photo 1 जस्तै Blue देखि Orange/Yellow) */
+/* Gradient Overlay 
 .banner-overlay {
   position: absolute;
   top: 0;
@@ -7756,7 +7754,7 @@ button.ruwali-close-btn {
 ========================================== */
 @media (max-width: 768px) {
   .page-header-banner {
-    min-height: 220px; /* Mobile ma height अलि कम */
+    min-height: 220px; 
     margin-top: 15px;
   }
 
@@ -7800,7 +7798,7 @@ button.ruwali-close-btn {
   width: 85%;
   max-width: 320px;
   height: 100vh;
-  background-color: #ffffff !important; /* Pure White Background */
+  background-color: #ffffff !important; 
   z-index: 9999;
   display: flex;
   flex-direction: column;
@@ -7980,7 +7978,7 @@ button.ruwali-close-btn {
 .btn-read-more-custom:hover {
   background-color: #0b132b !important; /* Yellow Background on Hover */
   color: #ffffff !important;            /* Navy Black Text on Hover */
-  transform: translateY(-2px);           /* हल्का माथि उठ्ने effect */
+  transform: translateY(-2px);           
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 /* Exact Pill Button Design */
@@ -8050,8 +8048,7 @@ button.ruwali-close-btn {
 
 /* Base Card Wrapper */
 .blog-card-item {
-  scroll-snap-align: center; /* Mobile मा स्वाइप गर्दा Card Center मा बस्छ */
-  width: 320px; /* Standard desktop width */
+  scroll-snap-align: center;
 }
 
 .blog-custom-card {
@@ -8148,7 +8145,7 @@ button.ruwali-close-btn {
   border-color: #ffc107;
 }
 /* =========================================================
-   CSS ISOLATION & RECOVERY (अरू CSS ले असर नगर्ने बनाउन)
+   CSS ISOLATION & RECOVERY 
    ========================================================= */
 
 /* 1. Protect modal display and positioning */
